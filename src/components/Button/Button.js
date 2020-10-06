@@ -38,7 +38,7 @@ const ButtonBase = styled.button`
 
     switch (props.variant) {
       case 'filled':
-        return props.theme.color.text.primary;
+        return props.theme.color.text.secondary;
       default:
         return props.theme.color.primary.main;
     }
