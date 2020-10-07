@@ -2,10 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-/**
- * Styled generic button wrapping default button element
- */
-
 const ButtonBase = styled.button`
   background: ${(props) => {
     if (props.disabled) {
@@ -105,10 +101,14 @@ const ButtonBase = styled.button`
     outline: none;
   }
   &:active {
-    transform: scale(1.1);
+    transform: ${(props) => (props.fullWidth ? 'none' : 'scale(1.1)')};
   }
   width: ${(props) => (props.fullWidth ? '100%' : 'auto')};
 `;
+
+/**
+ * Styled abstraction of default button element
+ */
 
 export const Button = ({ label, ...props }) => {
   return <ButtonBase data-testid='button' {...props}>{label}</ButtonBase>;
@@ -136,7 +136,7 @@ Button.propTypes = {
    */
   disabled: PropTypes.bool,
   /**
-   * Function to fire when button is clicked
+   * Function to fire when button clicked
    */
   onClick: PropTypes.func
 };

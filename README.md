@@ -1,7 +1,7 @@
 # Palmy Design Library
 
 **Goal**: Further my personal understanding of component driven user interface libraries by building my own custom library of reusable, performant components inspired by [Material-UI](https://material-ui.com/) and eventually publishing to NPM.
-## Plan and Progress
+## Latest Plan and Progress
 
 - Layout
     - [ ] Grid
@@ -17,7 +17,20 @@
             - [x] fullWidth
             - [x] disabled
             - [x] onClick
-    - [ ] Checkbox
+    - [x] Checkbox
+        - Variants:
+            - [ ] Outlined
+            - [ ] Filled
+        - Props:
+            - [x] label
+            - [x] size
+            - [x] color
+            - [x] checked
+            - [x] onChange
+            - [ ] disabled
+            - [ ] checkedIcon
+            - [ ] value
+            - [ ] id
     - [ ] Switch
     - [ ] Slider
     - [ ] Text Field

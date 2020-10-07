@@ -1,18 +1,19 @@
 export const theme = {
+  fontFamily: '\'Nunito Sans\', sans-serif',
   color: {
     primary: {
-      main: '#02F2B2'
+      main: '#2A9D8F'
     },
     secondary: {
-      main: '#9BB1FF'
+      main: '#E9C46A'
     },
     background: {
-      main: '#223843',
-      surface: '#59656F'
+      main: '#060C0E',
+      surface: '#1F3D47'
     },
     text: {
-      primary: '#fff',
-      secondary: '#DDE1E4'
+      primary: '#F3E2EC',
+      secondary: '#E76F51'
     },
     grey: {
       50: '#fafafa',
